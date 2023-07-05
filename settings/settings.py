@@ -188,7 +188,7 @@ import api.tasks
 CELERY_BEAT_SCHEDULE = {
     "update-debt-every-3-hours": {
         "task": "api.tasks.updating_debt_task",
-        "schedule": crontab(hour="*/3"),
+        "schedule": crontab(minute=0, hour="*/3"),
     },
     "reduce-debt-every-day": {
         "task": "api.tasks.reduce_debt_task",
