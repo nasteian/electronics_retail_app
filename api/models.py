@@ -118,7 +118,7 @@ class Address(models.Model):
 class Product(models.Model):
     """Product model."""
 
-    name = models.CharField(max_length=50, verbose_name=_("Name"))
+    name = models.CharField(max_length=25, verbose_name=_("Name"))
     product_model = models.CharField(max_length=25, verbose_name=_("Product Model"))
     release_date = models.DateTimeField(
         verbose_name=_("Market launch date"),
